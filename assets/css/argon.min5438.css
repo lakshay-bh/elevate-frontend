@@ -3243,12 +3243,12 @@ input[type="submit"].btn-block {
   display: none;
   float: left;
   min-width: 10rem;
-  margin: 0;
+  margin: 0.125rem 0 0;
   padding: 0.5rem 0;
   list-style: none;
-  text-align: center;
+  text-align: left;
   color: #525f7f;
-  border: 0 solid rgba(71, 71, 71, 0.15);
+  border: 0 solid rgba(0, 0, 0, 0.15);
   border-radius: 0.4375rem;
   background-color: #fff;
   background-clip: padding-box;
