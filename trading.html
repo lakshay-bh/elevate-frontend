@@ -66,6 +66,8 @@
 	<!-- Page plugins -->
 	<!-- Argon CSS -->
 	<link rel="stylesheet" href="assets/css/argon.min5438.css?v=1.2.0" type="text/css">
+	<!-- Font Awesome -->
+	<script src="https://kit.fontawesome.com/4acad05782.js" crossorigin="anonymous"></script>
 	<!-- Google Tag Manager -->
 	<script>
 		(function (w, d, s, l, i) {
@@ -454,19 +456,19 @@
 				<div class="header-body">
 					<div class="row align-items-center py-4">
 						<div class="col-lg-6 col-7">
-							<h6 class="h2 text-white d-inline-block mb-0">Default</h6>
-							<nav aria-label="breadcrumb" class="d-none d-md-inline-block ml-md-4">
+							<!-- <h6 class="h2 text-white d-inline-block mb-0">Default</h6> -->
+							<!-- <nav aria-label="breadcrumb" class="d-none d-md-inline-block ml-md-4">
 								<ol class="breadcrumb breadcrumb-links breadcrumb-dark">
 									<li class="breadcrumb-item"><a href="#"><i class="fas fa-home"></i></a></li>
 									<li class="breadcrumb-item"><a href="#">Dashboards</a></li>
 									<li class="breadcrumb-item active" aria-current="page">Default</li>
 								</ol>
-							</nav>
+							</nav> -->
 						</div>
-						<div class="col-lg-6 col-5 text-right">
+						<!-- <div class="col-lg-6 col-5 text-right">
 							<a href="#" class="btn btn-sm btn-neutral">New</a>
 							<a href="#" class="btn btn-sm btn-neutral">Filters</a>
-						</div>
+						</div> -->
 					</div>
 					<!-- Card stats -->
 					<div class="row">
@@ -569,123 +571,204 @@
 		<!-- Page content -->
 		<div class="container-fluid mt--6">
 			<div class="row">
-				<div class="col-xl-6">
+				<div class="col-xl-4">
 					<div class="card bg-default">
 						<div class="card-header bg-transparent">
 							<div class="row align-items-center">
 								<div class="col">
-									<h6 class="text-light text-uppercase ls-1 mb-1">Overview</h6>
+									<h6 class="text-light text-uppercase ls-1 mb-1">Buying request form</h6>
 									<h5 class="h3 text-white mb-0">Send Request</h5>
 								</div>
-								<!-- <div class="col">
-                  <ul class="nav nav-pills justify-content-end">
-                    <li class="nav-item mr-2 mr-md-0" data-toggle="chart" data-target="#chart-sales-dark" data-update='{"data":{"datasets":[{"data":[0, 20, 10, 30, 15, 40, 20, 60, 60]}]}}' data-prefix="$" data-suffix="k">
-                      <a href="#" class="nav-link py-2 px-3 active" data-toggle="tab">
-                        <span class="d-none d-md-block">Month</span>
-                        <span class="d-md-none">M</span>
-                      </a>
-                    </li>
-                    <li class="nav-item" data-toggle="chart" data-target="#chart-sales-dark" data-update='{"data":{"datasets":[{"data":[0, 20, 5, 25, 10, 30, 15, 40, 40]}]}}' data-prefix="$" data-suffix="k">
-                      <a href="#" class="nav-link py-2 px-3" data-toggle="tab">
-                        <span class="d-none d-md-block">Week</span>
-                        <span class="d-md-none">W</span>
-                      </a>
-                    </li>
-                  </ul>
-                				</div> -->
 							</div>
 						</div>
 						<div class="card-body">
 							<!-- Chart -->
 							<form action="">
-								<div class="team-name">
+								<div class="team-name ">
 									<label for="">Select Team</label>
-									<div class="dropdown">
-										<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									<div class="dropdown" style="width: 100%;">
+										<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="width: 100%;">
 										  Teams
 										</button>
-										<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+										<div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="width: 100%;" >
 										  <a class="dropdown-item" href="#">Team 1</a>
 										  <a class="dropdown-item" href="#">Team 2</a>
 										  <a class="dropdown-item" href="#">Team 3</a>
 										</div>
 									  </div>
 								</div>
-								<br>
-								<div class="product">
+								<div class="product mt-3" >
 									<label for="">Select Product</label>
-									<div class="dropdown">
-										<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									<div class="dropdown" style="width: 100%;">
+										<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="width: 100%;">
 										  Products
 										</button>
-										<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+										<div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="width: 100%;">
 										  <a class="dropdown-item" href="#">Product 1</a>
 										  <a class="dropdown-item" href="#">Product 2</a>
 										  <a class="dropdown-item" href="#">Product 3</a>
 										</div>
 									  </div>
 								</div>
-								<br>
-								<div class="price">
-									<label for="">Price </label>
-									<input type="text" class="form-control">
+								<div class="price mt-3">
+									<div class="">
+										<label for="input1" class="control-label">Price </label>
+										<i class="fa fa-inr"></i>
+										<input type="number" id="input1" class="form-control" placeholder="Enter Price">
+									  </div>
 								</div>
-								<br>
-								<div class="quantity">
+								<div class="quantity mt-3">
 									<label for="">Quantity </label>
-									<input type="text" class="form-control">
+									<input type="number" class="form-control" placeholder="Enter Quantity">
 								</div>
+								<button class="btn btn-success mt-3" style="width: 100%;">
+									Send
+								</button>
 							</form>
 						</div>
 					</div>
 				</div>
-				<div class="col-xl-6">
-					<div class="card">
+				<div class="col-xl-8" >
+					<div class="card" >
 						<div class="card-header bg-transparent">
 							<div class="row align-items-center">
 								<div class="col">
-									<h6 class="text-uppercase text-muted ls-1 mb-1">Performance</h6>
-									<h5 class="h3 mb-0">Total orders</h5>
+									<h6 class="text-uppercase text-muted ls-1 mb-1">Requested</h6>
+									<h5 class="h3 mb-0">Pending Requests</h5>
 								</div>
 							</div>
 						</div>
-						<div class="card-body">
+						<div class="card-body p-2" >
 							<!-- Chart -->
+							<div class="req-list">
+								<div class="list-group">
+									<a href="#" class="list-group-item list-group-item-action flex-column align-items-start ">
+									  <div class="d-flex w-100 justify-content-between">
+										<h5 class="mb-1">Team 1</h5>
+									  </div>
+									  <p class="mb-1">Product : Laptop</p>
+									  <p class="mb-1">Quantity : 100</p>
+									  <button class="btn btn-danger float-right " style="margin-top:-2.5rem ;">Reject</button>
+									  <button class="btn btn-success float-right mr-1 " style="margin-top:-2.5rem ;">Accept</button>
 
+									</a>
+									<a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+									  <div class="d-flex w-100 justify-content-between">
+										<h5 class="mb-1">Team 2</h5>
+									  </div>
+									  <p class="mb-1">Product : Laptop</p>
+									  <p class="mb-1">Quantity : 100</p>
+									  <button class="btn btn-danger float-right " style="margin-top:-2.5rem ;">Reject</button>
+									  <button class="btn btn-success float-right mr-1" style="margin-top:-2.5rem ;">Accept</button>
+									</a>
+									<a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+									  <div class="d-flex w-100 justify-content-between">
+										<h5 class="mb-1">Team 3</h5>
+									  </div>
+									  <p class="mb-1">Product : Laptop</p>
+									  <p class="mb-1">Quantity : 100</p>
+									  <button class="btn btn-danger float-right .rej-btn" style="margin-top:-2.5rem ;">Reject</button>
+									  <button class="btn btn-success float-right mr-1 .acc-btn" style="margin-top:-2.5rem ;">Accept</button>
+									</a>
+								  </div>
+							</div>	
+					
 						</div>
 					</div>
 				</div>
 			</div>
-			<!-- Footer -->
-			<!-- <footer class="footer pt-0">
-				<div class="row align-items-center justify-content-lg-between">
-					<div class="col-lg-6">
-						<div class="copyright text-center  text-lg-left  text-muted">
-							&copy; 2020 <a href="https://www.creative-tim.com/" class="font-weight-bold ml-1"
-								target="_blank">Creative Tim</a>
+			<div class="row">
+				<div class="col-xl-12">
+					<div class="card bg-default">
+						<div class="card-header bg-transparent">
+							<div class="row align-items-center ">
+								<div class="col">
+									<strong>
+										<h1 class="h1 text-white mb-0 text-bold">Notifications</h1>
+									</strong>
+								</div>
+							</div>
+							<div class="notify-body mt-3">
+								<div class="list-group">
+									<a href="#" class="list-group-item list-group-item-action flex-column align-items-start bg-default">
+									  <div class="d-flex w-100 justify-content-between">
+										<div class="row" style ="width: 100%; color: white;">
+											<div class="col-xl-10">
+												<h2 class="mb-1" style="color: red;">News Flash!!</h2>
+											</div>
+											<div class="col-xl-2">
+												<div class="notify-time float-right">
+													<small>10:00 PM</small>
+												</div>
+											</div>
+										</div>
+									  </div>
+									  <div class="row" style ="width: 100%; color: white;">
+										<div class="col-xl-10">
+											<p class="mt-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla ex libero omnis facere suscipit eum nostrum illo debitis quis nemo, quidem voluptatibus maiores velit, saepe facilis eveniet natus voluptatum. Sunt!</p>
+										</div>
+										<div class="col-xl-2">
+											<img src="demo-img.jpg" alt="" style="width: 100%;">
+										</div>
+										
+									  </div>
+
+									</a>
+									<a href="#" class="list-group-item list-group-item-action flex-column align-items-start bg-default">
+									  <div class="d-flex w-100 justify-content-between">
+										<div class="row" style ="width: 100%; color: white;">
+											<div class="col-xl-10">
+												<h2 class="mb-1" style="color: red;">News Flash!!</h2>
+											</div>
+											<div class="col-xl-2">
+												<div class="notify-time float-right">
+													<small>10:00 PM</small>
+												</div>
+											</div>
+										</div>
+									  </div>
+									  <div class="row" style ="width: 100%; color: white;">
+										<div class="col-xl-10">
+											<p class="mt-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla ex libero omnis facere suscipit eum nostrum illo debitis quis nemo, quidem voluptatibus maiores velit, saepe facilis eveniet natus voluptatum. Sunt!</p>
+										</div>
+										<div class="col-xl-2">
+											<img src="demo-img.jpg" alt="" style="width: 100%;">
+										</div>
+										
+									  </div>
+
+									</a>
+									<a href="#" class="list-group-item list-group-item-action flex-column align-items-start bg-default">
+									  <div class="d-flex w-100 justify-content-between">
+										<div class="row" style ="width: 100%; color: white;">
+											<div class="col-xl-10">
+												<h2 class="mb-1" style="color: red;">News Flash!!</h2>
+											</div>
+											<div class="col-xl-2">
+												<div class="notify-time float-right">
+													<small>10:00 PM</small>
+												</div>
+											</div>
+										</div>
+									  </div>
+									  <div class="row" style ="width: 100%; color: white;">
+										<div class="col-xl-10">
+											<p class="mt-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla ex libero omnis facere suscipit eum nostrum illo debitis quis nemo, quidem voluptatibus maiores velit, saepe facilis eveniet natus voluptatum. Sunt!</p>
+										</div>
+										<div class="col-xl-2">
+											<img src="demo-img.jpg" alt="" style="width: 100%;">
+										</div>
+										
+									  </div>
+
+									</a>
+
+								  </div>
+							</div>
 						</div>
 					</div>
-					<div class="col-lg-6">
-						<ul class="nav nav-footer justify-content-center justify-content-lg-end">
-							<li class="nav-item">
-								<a href="https://www.creative-tim.com/" class="nav-link" target="_blank">Creative
-									Tim</a>
-							</li>
-							<li class="nav-item">
-								<a href="https://www.creative-tim.com/presentation" class="nav-link"
-									target="_blank">About Us</a>
-							</li>
-							<li class="nav-item">
-								<a href="http://blog.creative-tim.com/" class="nav-link" target="_blank">Blog</a>
-							</li>
-							<li class="nav-item">
-								<a href="https://github.com/creativetimofficial/argon-dashboard/blob/master/LICENSE.md"
-									class="nav-link" target="_blank">MIT License</a>
-							</li>
-						</ul>
-					</div>
 				</div>
-			</footer> -->
+			</div>
 		</div>
 	</div>
 	<!-- Argon Scripts -->
