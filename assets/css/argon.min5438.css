@@ -567,7 +567,7 @@ pre code {
 .container-xl {
   width: 100%;
   margin-right: auto;
-
+ margin-left: auto;
   padding-right: 15px;
   padding-left: 15px;
 }
@@ -577,6 +577,10 @@ pre code {
   padding-right: 15px;
   padding-left: 5px;
   text-align: right;
+}
+
+.lak-1 {
+  overflow-x: hidden;
 }
 @media (min-width: 576px) {
   .container,
@@ -701,6 +705,7 @@ pre code {
 .col-xl-auto {
   position: relative;
   width: 100%;
+  
   padding-right: 15px;
   padding-left: 15px;
 }
@@ -4238,6 +4243,7 @@ input[type="submit"].btn-block {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+  
 }
 .navbar-brand {
   font-size: 1.25rem;
@@ -13223,6 +13229,7 @@ a.btn-icon-only {
   .main-content .container-xl {
     padding-right: 30px !important;
     padding-left: 30px !important;
+    margin-top: 15px;
   }
 }
 .custom-checkbox .custom-control-input ~ .custom-control-label {
