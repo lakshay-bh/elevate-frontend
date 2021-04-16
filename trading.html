@@ -456,20 +456,16 @@
 				<div class="header-body">
 					<div class="row align-items-center py-4">
 						<div class="col-lg-6 col-7">
-							<!-- <h6 class="h2 text-white d-inline-block mb-0">Default</h6> -->
-							<!-- <nav aria-label="breadcrumb" class="d-none d-md-inline-block ml-md-4">
-								<ol class="breadcrumb breadcrumb-links breadcrumb-dark">
-									<li class="breadcrumb-item"><a href="#"><i class="fas fa-home"></i></a></li>
-									<li class="breadcrumb-item"><a href="#">Dashboards</a></li>
-									<li class="breadcrumb-item active" aria-current="page">Default</li>
-								</ol>
-							</nav> -->
+						  <h6 class="h2 text-white d-inline-block mb-0">Default</h6>
+						  <nav aria-label="breadcrumb" class="d-none d-md-inline-block ml-md-4">
+							<ol class="breadcrumb breadcrumb-links breadcrumb-dark">
+							  <li class="breadcrumb-item"><a href="#"><i class="fas fa-home"></i></a></li>
+							  <li class="breadcrumb-item"><a href="#">Dashboards</a></li>
+							  <li class="breadcrumb-item active" aria-current="page">Default</li>
+							</ol>
+						  </nav>
 						</div>
-						<!-- <div class="col-lg-6 col-5 text-right">
-							<a href="#" class="btn btn-sm btn-neutral">New</a>
-							<a href="#" class="btn btn-sm btn-neutral">Filters</a>
-						</div> -->
-					</div>
+					  </div>
 					<!-- Card stats -->
 					<div class="row">
 						<div class="col-xl-3 col-md-6">
@@ -586,11 +582,14 @@
 							<form action="">
 								<div class="team-name ">
 									<label for="">Select Team</label>
-									<div class="dropdown" style="width: 100%;">
-										<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="width: 100%;">
-										  Teams
+									<div class="btn-group" style="width: 100%;">
+										<button type="button" class="btn btn-secondary"style="width: 100%;" >
+											<span class="float-left">Teams</span>
 										</button>
-										<div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="width: 100%;" >
+										<button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										  <span class="sr-only">Toggle Dropdown</span>
+										</button>
+										<div class="dropdown-menu">
 										  <a class="dropdown-item" href="#">Team 1</a>
 										  <a class="dropdown-item" href="#">Team 2</a>
 										  <a class="dropdown-item" href="#">Team 3</a>
@@ -599,11 +598,14 @@
 								</div>
 								<div class="product mt-3" >
 									<label for="">Select Product</label>
-									<div class="dropdown" style="width: 100%;">
-										<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="width: 100%;">
-										  Products
+									<div class="btn-group" style="width: 100%;">
+										<button type="button" class="btn btn-secondary"style="width: 100%;" >
+											<span class="float-left">Products</span>
 										</button>
-										<div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="width: 100%;">
+										<button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										  <span class="sr-only">Toggle Dropdown</span>
+										</button>
+										<div class="dropdown-menu">
 										  <a class="dropdown-item" href="#">Product 1</a>
 										  <a class="dropdown-item" href="#">Product 2</a>
 										  <a class="dropdown-item" href="#">Product 3</a>
@@ -660,6 +662,42 @@
 									  <p class="mb-1">Quantity : 100</p>
 									  <button class="btn btn-danger float-right " style="margin-top:-2.5rem ;">Reject</button>
 									  <button class="btn btn-success float-right mr-1" style="margin-top:-2.5rem ;">Accept</button>
+									</a>
+									<a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+									  <div class="d-flex w-100 justify-content-between">
+										<h5 class="mb-1">Team 3</h5>
+									  </div>
+									  <p class="mb-1">Product : Laptop</p>
+									  <p class="mb-1">Quantity : 100</p>
+									  <button class="btn btn-danger float-right .rej-btn" style="margin-top:-2.5rem ;">Reject</button>
+									  <button class="btn btn-success float-right mr-1 .acc-btn" style="margin-top:-2.5rem ;">Accept</button>
+									</a>
+									<a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+									  <div class="d-flex w-100 justify-content-between">
+										<h5 class="mb-1">Team 3</h5>
+									  </div>
+									  <p class="mb-1">Product : Laptop</p>
+									  <p class="mb-1">Quantity : 100</p>
+									  <button class="btn btn-danger float-right .rej-btn" style="margin-top:-2.5rem ;">Reject</button>
+									  <button class="btn btn-success float-right mr-1 .acc-btn" style="margin-top:-2.5rem ;">Accept</button>
+									</a>
+									<a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+									  <div class="d-flex w-100 justify-content-between">
+										<h5 class="mb-1">Team 3</h5>
+									  </div>
+									  <p class="mb-1">Product : Laptop</p>
+									  <p class="mb-1">Quantity : 100</p>
+									  <button class="btn btn-danger float-right .rej-btn" style="margin-top:-2.5rem ;">Reject</button>
+									  <button class="btn btn-success float-right mr-1 .acc-btn" style="margin-top:-2.5rem ;">Accept</button>
+									</a>
+									<a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+									  <div class="d-flex w-100 justify-content-between">
+										<h5 class="mb-1">Team 3</h5>
+									  </div>
+									  <p class="mb-1">Product : Laptop</p>
+									  <p class="mb-1">Quantity : 100</p>
+									  <button class="btn btn-danger float-right .rej-btn" style="margin-top:-2.5rem ;">Reject</button>
+									  <button class="btn btn-success float-right mr-1 .acc-btn" style="margin-top:-2.5rem ;">Accept</button>
 									</a>
 									<a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
 									  <div class="d-flex w-100 justify-content-between">
