@@ -83,7 +83,7 @@ body {
   margin: 0;
   text-align: left;
   color: #525f7f;
-  background-color: #f8f9fe;
+  background-color: #2c3531;
 }
 [tabindex="-1"]:focus:not(:focus-visible) {
   outline: 0 !important;
@@ -2381,14 +2381,14 @@ fieldset:disabled a.btn {
 }
 .btn-primary {
   color: #fff;
-  border-color: #5e72e4;
-  background-color: #5e72e4;
+  border-color: #116466;
+  background-color: #116466;
   box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 .btn-primary:hover {
   color: #fff;
-  border-color: #5e72e4;
-  background-color: #5e72e4;
+  border-color: #d9b08c;
+  background-color: #d9b08c;
 }
 .btn-primary.focus,
 .btn-primary:focus {
@@ -4631,6 +4631,7 @@ input[type="submit"].btn-block {
   border-bottom-left-radius: 0.375rem;
 }
 .card-body {
+  
   min-height: 1px;
   padding: 1.5rem;
   flex: 1 1 auto;
@@ -6381,7 +6382,7 @@ a.close.disabled {
   vertical-align: text-top !important;
 }
 .bg-primary {
-  background-color: #5e72e4 !important;
+  background-color: #116466 !important;
 }
 a.bg-primary:focus,
 a.bg-primary:hover,
@@ -6453,7 +6454,7 @@ button.bg-dark:hover {
   background-color: #0a0c0d !important;
 }
 .bg-default {
-  background-color: #172b4d !important;
+  background-color: #d9b08c !important;
 }
 a.bg-default:focus,
 a.bg-default:hover,
